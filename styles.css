@@ -1,0 +1,27 @@
+main {
+    text-align: center;
+    width: 60%;
+    height: 100%;
+    margin: auto;
+}
+#scoreContainer {
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    width: 75%;
+    
+}
+#scoreBox {
+    display: flex;
+    flex-direction: column;
+}
+img {
+    width: 16vw;
+}
+.sign {
+    display: flex;
+    width: 17vw;
+    height: 33vh;
+    align-items: center;
+    justify-content: center;
+}
