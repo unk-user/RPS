@@ -109,8 +109,8 @@
                 rounds += 1; 
             } else {
                 rounds = 0;
-                computerScore = 0;
-                playerScore = 0;
+                computerScoreDisplay.textContent = `Computer: 0`;
+                playerScoreDisplay.textContent = `Player: 0`;
                 scoreMessage.textContent = "Try again!";
                 playerSign.innerHTML = '';
                 computerSign.innerHTML = '';
