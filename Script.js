@@ -57,38 +57,24 @@
     }
     function score(playerSelection, Choice) {
         let display;
-        if (playerSelection === Choice) {            
-            pScoreBox.style.backgroundColor = '#56b856';
-            cScorebox.style.backgroundColor = '#56b856';
+        if (playerSelection === Choice) {
             display = "its a tie!";
-          } else if (playerSelection === R && Choice === P) {                        
-            pScoreBox.style.backgroundColor = '#e86c5d';
-            cScorebox.style.backgroundColor = '#6ac4c4';
+          } else if (playerSelection === R && Choice === P) {
             computerScore += 1;
             display = "you lost";
-          } else if (playerSelection === R && Choice === S) {            
-            pScoreBox.style.backgroundColor = '#6ac4c4';
-            cScorebox.style.backgroundColor = '#e86c5d';
+          } else if (playerSelection === R && Choice === S) {   
             playerScore += 1;
             display = "you won!";
-          } else if (playerSelection === P && Choice === R) {            
-            pScoreBox.style.backgroundColor = '#6ac4c4';
-            cScorebox.style.backgroundColor = '#e86c5d';
+          } else if (playerSelection === P && Choice === R) {   
             playerScore += 1;
             display = "you won!";
-          } else if (playerSelection === P && Choice === S) {            
-            pScoreBox.style.backgroundColor = '#e86c5d';
-            cScorebox.style.backgroundColor = '#6ac4c4';
+          } else if (playerSelection === P && Choice === S) {  
             computerScore += 1;
             display = "you lost";
-          } else if (playerSelection === S && Choice === R) {            
-            pScoreBox.style.backgroundColor = '#e86c5d';
-            cScorebox.style.backgroundColor = '#6ac4c4';
+          } else if (playerSelection === S && Choice === R) {   
             computerScore += 1;
             display = "you lost";
-          } else if (playerSelection === S && Choice === P) {            
-            pScoreBox.style.backgroundColor = '#6ac4c4';
-            cScorebox.style.backgroundColor = '#e86c5d';
+          } else if (playerSelection === S && Choice === P) {   
             playerScore += 1;
             display = "you won!";
           } else {
@@ -98,7 +84,7 @@
     }
     buttons.forEach(button => {
         button.addEventListener('click', function() {
-            if(rounds < 10){
+            if(rounds < 5){
                 let playerSelection = handleClick(event);
                 let computerSelection = getComputerChoice();
                 result = score(playerSelection, computerSelection);
